@@ -1,0 +1,535 @@
+/*ѕодключение шрифта fontello дл€ иконок социальных сетей*/    
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot');
+  src: url('../fonts/fontello.eot') format('embedded-opentype'),
+       url('../fonts/fontello.woff2') format('woff2'),
+       url('../fonts/fontello.woff') format('woff'),
+       url('../fonts/fontello.ttf') format('truetype'),
+       url('../fonts/fontello.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-gplus:before { content: '\e80d'; } /* 'о†Н' */
+.icon-vk:before { content: '\e816';
+                  margin-left: -1px;
+} /* 'о†Ц' */
+.icon-skype-2:before { content: '\e817'; } /* 'о†Ч' */
+.icon-twitter-3:before { content: '\e818'; } /* 'о†Ш' */
+.icon-facebook-2:before { content: '\e819'; } /* 'о†Щ' */
+.icon-twitter-4:before { content: '\e81c'; } /* 'о†Ь' */
+.icon-instagram-filled:before { content: '\e822'; } /* 'о†Ґ' */
+
+
+/*ќбщие стили*/
+body {
+     font-family: "Raleway", sans-serif;
+     font-weight: 400;
+     color: #6c7279; 
+}
+
+p {
+     font-size: 14px;
+     line-height: 22.4px;
+     color: #6c7279; 
+}
+
+h1 {
+    font-size: 65px;
+    color: #2d3033;
+}
+
+h2 {
+    font-size: 40px;
+    color: #2d3033; 
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300; 
+}
+
+h4 {
+    font-size: 22px;
+    color: #2d3033;
+    font-weight: 400; 
+}
+
+h5 {
+    font-size: 14px;
+    color: #2d3033;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+.btn {
+    background-color: #e84545;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border: 0;
+    -moz-border-radius: 2px;
+     -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    text-transform: uppercase; 
+}
+  
+.btn:hover, .btn:focus {
+    background-color: #e52e2e;
+    color: #fff; 
+}
+  
+.btn-large {
+    padding: 15px 40px; 
+}
+
+a {
+    color: #e84545; 
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    -moz-transition: background-color, color, 0.3s;
+    -o-transition: background-color, color, 0.3s;
+    -webkit-transition: background-color, color, 0.3s;
+    transition: background-color, color, 0.3s; 
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0; 
+}
+
+ul li {
+    list-style: none;
+}
+
+.section {
+    padding: 100px 0;    
+}
+
+
+    /*ѕеребитые стили Bootstrap*/
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: 0 !important;    
+}
+
+.navbar-default {
+    background: none;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+    color: #fff;
+    cursor: default;
+    background: none;
+    border: none;   
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    background: none;
+}
+
+.nav-tabs>li>a {
+    border: none;
+}
+
+.nav-tabs>li{
+    float:none !important;
+    margin-bottom: 0;
+}
+
+    /*BANNER*/
+.iBanner {
+    background-color: rgba(44,49,84, 0.9);
+    min-height: 750px;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 999;   
+}
+
+.headerScroll {
+    background-color: #292C47; 
+}
+
+ .header-content {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 36px 0;
+    width: 100%;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s;    
+}
+
+.headerContentScroll {
+    border-bottom: 0;
+    padding: 25px 0;
+    -moz-transition: padding 0.3s;
+    -o-transition: padding 0.3s;
+    -webkit-transition: padding 0.3s;
+    transition: padding 0.3s;
+}
+
+#header .logo {
+    float: left; 
+}
+
+.navigation {
+    float: right;    
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 40px;
+    text-transform: uppercase; 
+}
+
+.navigation a:hover, .navigation a.active {
+    color: #ffffff;    
+}
+
+.banner {
+    background-image: url('../img/bannerBg6.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 750px;     
+}
+
+.banner-text {
+    padding-top: 25%; 
+}
+
+.banner-text h1 {
+    color: #fff;    
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+
+.banner-text p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 80px; 
+}
+
+
+    /*TEHNOLOGIES*/
+.tehnologies-content {
+    padding: 10px 15px;
+    margin-top: 30px;
+    border-top: 1px solid rgba(49, 52, 84, 0.4);
+}
+  
+.boxShowHide {
+    position:relative;
+    overflow:hidden;
+}
+ 
+.caption {
+    position:absolute;
+    top:0;
+    right:0;
+    background: rgb(49, 52, 84);
+    opacity: 0.9;
+    width:100%;
+    height:100%;    
+    text-align:center;
+    color:#fff !important;
+    z-index:1;
+    display: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.caption div {   
+    position: relative;
+    top: 35%;
+}
+
+.caption span {    
+    color: grey;
+    font-weight: 700;
+    font-size: 20px;    
+}
+
+.caption h4 {
+    margin-top: 5px;
+    color: #fff;    
+}
+
+  /*ABOUT*/
+#about {
+    background-color: #53354A;            
+}
+
+#about h4, #about h5, #about p, #about h2 {
+    color: #EEECED;
+}
+
+#about p {
+    color: #96989E;
+} 
+
+#about h2 {
+    margin-bottom: 50px;
+}
+
+.person {
+    max-width: 270px;
+}
+
+.person-content {
+    margin-top: 20px; 
+}
+
+.person h4 {
+    font-weight: 400; }
+
+.person h5 {    
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 20px; 
+}
+
+.social-icons, .footer .footer-share {
+    margin-top: 30px; 
+}
+
+.social-icons li, .footer .footer-share li {    
+    display: inline-block;     
+}
+
+.social-icons a, .footer .footer-share a {
+    border: 1px solid #e8ecee;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #c6cacc;
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 40px; 
+}
+
+.social-icons a:hover, .footer .footer-share a:hover {
+    background-color: #e84545;
+    border-color: #e84545;
+    color: #fff; 
+}
+
+    /*CONTACT*/
+#contact { 
+    background-color: #ffffff;
+    padding: 10px 0;
+}
+
+#contact h2 {
+    margin-bottom: 50px;
+}
+
+.center-form {    
+    margin: 0 auto;
+    max-width: 556px;    
+}
+
+.form-control {
+    border: 1px solid #15A4FA;
+    box-shadow: none;
+    color: #6c7279;
+}
+
+form input {
+    min-height: 62px;    
+}
+
+form textarea {
+    min-height: 162px;
+}
+
+    /*FOOTER*/
+#footer {
+    background-color: #313454;
+    padding: 30px 0;         
+}
+
+#footer p {    
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.whiteText {
+    color: #fff;
+}
+
+.skypeColor {
+    color: #00AFF0;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+      .person {
+            margin: 0 auto 50px; 
+      }
+    
+      .person-content {
+            text-align: center; 
+      }
+
+      .person .social-icons li {
+            display: inline-block;
+            float: none;
+            margin-bottom: 5px; 
+      }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	    h2 {
+            font-size: 30px;
+	    }
+    
+        #header {
+            position: fixed;
+            width: 100%;
+            z-index: 999;                
+            background-color: #292C47; 
+            border-bottom: 0;      
+        }
+
+        #header .logo {
+            padding-top: 8px; 
+        }
+
+        .header-content {   
+            margin: 0 auto;
+            max-width: 1170px;
+            padding: 10px 0;
+            width: 100%; 
+            border-bottom: none;   
+        }
+    
+        .navigation {
+            float: none;
+            position: absolute;
+            margin-top: 55px;
+            width: 100%;
+            display: none;
+            background-color: #292C47;
+	    }   
+
+        .navigation li {
+            display: block;
+            padding: 5px;
+        }
+
+        .navigation a {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 13px;
+            font-weight: 700;
+            margin-left: 0;
+            text-align: center;
+            text-transform: uppercase; 
+            display: block; 
+            width: 100%;
+            background-color: none;
+        }
+
+        .navigation a:hover, .navigation a:focus {        
+            background-color: none;
+        }
+
+        nav>li>a:hover,.nav>li>a:focus{
+            text-decoration:none;background-color:none;
+        }   
+
+        .banner-text h1 {
+            font-size: 30px;
+        }
+
+        .banner-text p {
+            font-size: 15px;
+        }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {	
+}
+
+@media only screen and (min-width : 993px) {	
+}
+
+
+
+
+
+
+
+
+
+
+
